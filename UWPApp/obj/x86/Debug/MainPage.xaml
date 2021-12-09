@@ -6,23 +6,23 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+>
 
     <Grid HorizontalAlignment="Stretch" Height="640">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="171*"/>
+            <ColumnDefinition Width="256*" />
+            <ColumnDefinition Width="85*" />
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0" Height="auto">
-            <Rectangle x:ConnectionId='3' Name="Rec1" Fill="#1b80ab"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Grid.Row="1" Margin="0" Height="auto" Width="auto" />
-            
-            <Grid Padding="20">
+            <Rectangle x:ConnectionId='7' Name="Rec1" Fill="#1b80ab"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Grid.Row="1" Margin="0" Height="auto" Width="auto" />
+
+            <Grid Padding="20" Margin="10 10 0 0">
                 <Grid.ColumnDefinitions >
                     <ColumnDefinition />
                     <ColumnDefinition />
-                    
-                    
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
@@ -30,51 +30,76 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition />
-                                        <RowDefinition />
                 </Grid.RowDefinitions>
+
                 <StackPanel Grid.ColumnSpan="2" Grid.Row="1" Margin="10">
-                <TextBlock Foreground="White" FontWeight="Bold" FontSize="35" Text="Sign Up Customer!" Grid.Column="0" Margin="-10 -20 0 20"/>
+                    <TextBlock Foreground="White" FontWeight="Bold" FontSize="40" Text="Sign In" Grid.Column="0" Margin="-10 -20 0 20"/>
+                    <TextBlock Foreground="White" FontWeight="Bold" FontSize="20" Text="-Customer!" Grid.Column="0" Margin="5 -30 0 0"/>
                 </StackPanel>
 
-                <StackPanel Grid.Column="0" Grid.Row="2" Margin="0 0 10 15">
-                <TextBlock x:ConnectionId='7' Foreground="White" x:Name="FirstName" Text="First name:" Grid.Column="0" Margin="0 0 0 2"/>
-                <TextBox Grid.Column="0"/>
-                </StackPanel>
-                
-                <StackPanel Grid.Column="1" Grid.Row="2" Margin="10 0 0 15">
-                <TextBlock x:ConnectionId='6' Foreground="White" x:Name="LastName" Text="Last name:" Grid.Column="1" Margin="0 0 0 2"/>
-                <TextBox Grid.Column="1"/>
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="2" Margin="0 15 20 15">
+                    <TextBlock Foreground="White" Text="First name:" Grid.Column="0" Margin="3 0 0 2"/>
+                    <TextBox x:ConnectionId='12' Grid.Column="0" x:Name="FirstName" FontWeight="Normal" BorderThickness="0,0,0,0" BorderBrush="White" Padding="15 5 0 0"/>
                 </StackPanel>
 
-                <StackPanel Grid.ColumnSpan="2" Grid.Row="3" Margin="0 0 0 15">
-                <TextBlock x:ConnectionId='5' Foreground="White" x:Name="Email" Text="E-mail:" Grid.Column="1" Margin="0 0 0 2"/>
-                <TextBox Grid.Column="1"/>
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="3" Margin="0 0 20 15">
+                    <TextBlock Foreground="White" Text="Last name:" Grid.Column="0" Margin="3 0 0 2"/>
+                    <TextBox x:ConnectionId='11' Grid.Column="0" x:Name="LastName" FontWeight="Normal" BorderThickness="0,0,0,0" BorderBrush="White" Padding="15 5 0 0"/>
                 </StackPanel>
 
-                <StackPanel Grid.ColumnSpan="2" Grid.Row="4" Margin="0 0 0 15">
-                    <TextBlock x:ConnectionId='4' Foreground="White" x:Name="Wishes" Text="Special wishes:" Grid.Column="0" Margin="0 0 0 2"/>
-                    <TextBox Grid.Column="0" Height="80" />
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="4" Margin="0 0 20 15">
+                    <TextBlock Foreground="White" Text="E-mail:" Grid.Column="1" Margin="3 0 0 2"/>
+                    <TextBox x:ConnectionId='10' Grid.Column="1" x:Name="Email" FontWeight="Normal" BorderThickness="0,0,0,0" BorderBrush="White" Padding="15 5 0 0"/>
                 </StackPanel>
 
-                <StackPanel Grid.ColumnSpan="2" Grid.Row="5" Margin="00 10 0 15">
-                    <Button Content="Sign Up!" FontSize="20" FontWeight="Bold" HorizontalAlignment="Stretch"/>
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="5" Margin="0 0 20 15">
+                    <TextBlock Foreground="White" Text="Special wishes:" Grid.Column="0" Margin="3 0 0 2"/>
+                    <TextBox x:ConnectionId='9' Grid.Column="0" Height="120" x:Name="Wishes" FontWeight="Normal" BorderThickness="0,0,0,0" BorderBrush="White" Padding="15 5 0 0"/>
                 </StackPanel>
 
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="6" Margin="00 10 20 15">
+                    <Button x:ConnectionId='8' Content="Sign In!" x:Name="Submit" FontSize="20" FontWeight="Bold" HorizontalAlignment="Stretch"                     />
+                </StackPanel>
             </Grid>
-            
-        
+
+
         </Grid>
 
 
         <Grid Grid.Column="1" Height="auto">
-            <Rectangle x:ConnectionId='2' Name="Rec2" Fill="#dbd7d7"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Grid.Row="1" Margin="0" Height="auto" Width="auto" />
+            <Rectangle x:ConnectionId='3' Name="Rec2" Fill="#dbd7d7"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Grid.Row="1" Margin="0" Height="auto" Width="auto" />
             <StackPanel Padding="20">
+                <TextBlock Foreground="Black" FontWeight="Bold" FontSize="40" Text="Customers" Grid.Column="0" Margin="0 0 0 20"/>
+                <TextBlock Foreground="Black" FontWeight="Bold" FontSize="20" Text="-All of our Customers!" Grid.Column="0" Margin="15 -30 0 48"/>
+                <ListView x:ConnectionId='4' x:Name="Customerlist">
+                    <ListViewItem>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Width="60" Height="40" Source="Assets/profile2.png" HorizontalAlignment="Right" Stretch="Fill"/>
+                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="10 0 0 0">
+                                <TextBlock x:ConnectionId='5' x:Name="FullName" Foreground="Black" FontWeight="Bold" FontSize="16" Text="David Lindström"/>
+                                <TextBlock x:ConnectionId='6' x:Name="Emaillist" Foreground="Black" Text="david.s.lindstrom@gmail.com"/>
+                            </StackPanel>
+                        </Grid>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        
+        <Grid Grid.Column="2" Height="auto">
+            <Rectangle x:ConnectionId='2' Name="Rec3" Fill="#1b80ab"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Grid.Row="1" Margin="0" Height="auto" Width="auto" />
+            <StackPanel Padding="20">
+                
                 <ListViewItem Foreground="Black">Item</ListViewItem>
             </StackPanel>
-            
-        </Grid>
 
+        </Grid>
     </Grid>
 </Page>
 

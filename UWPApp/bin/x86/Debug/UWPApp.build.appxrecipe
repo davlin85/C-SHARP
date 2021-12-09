@@ -34,8 +34,14 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22000.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\blank-profile.png">
+      <PackagePath>Assets\blank-profile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\profile.png">
+      <PackagePath>Assets\profile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\profile2.png">
+      <PackagePath>Assets\profile2.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -63,6 +69,9 @@
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\bin\x86\Debug\UWPApp.xr.xml">
       <PackagePath>UWPApp.xr.xml</PackagePath>

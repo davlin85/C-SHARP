@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-12-09T10:43:41.704</Modified>
+      <Modified>2021-12-09T15:37:19.635</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\bin\x86\Debug\UWPApp.exe">
       <PackagePath>entrypoint\UWPApp.exe</PackagePath>
-      <Modified>2021-12-09T10:43:41.145</Modified>
+      <Modified>2021-12-09T15:37:19.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,9 +46,17 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2021-09-11T17:48:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-12-08T08:54:08.008</Modified>
+    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\blank-profile.png">
+      <PackagePath>Assets\blank-profile.png</PackagePath>
+      <Modified>2021-12-09T15:29:50.109</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\profile.png">
+      <PackagePath>Assets\profile.png</PackagePath>
+      <Modified>2021-12-09T15:29:50.109</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\profile2.png">
+      <PackagePath>Assets\profile2.png</PackagePath>
+      <Modified>2021-12-09T15:32:40.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -84,17 +92,21 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-12-03T12:58:58.588</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2021-12-08T08:54:08.008</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\bin\x86\Debug\UWPApp.xr.xml">
       <PackagePath>UWPApp.xr.xml</PackagePath>
-      <Modified>2021-12-09T10:41:01.161</Modified>
+      <Modified>2021-12-09T15:37:18.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-12-09T10:43:41.089</Modified>
+      <Modified>2021-12-09T15:37:18.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-12-09T10:43:41.090</Modified>
+      <Modified>2021-12-09T15:37:18.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22000.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -102,11 +114,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-12-09T08:47:17.847</Modified>
+      <Modified>2021-12-09T15:33:07.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\david\OneDrive\Dokument\Webbutvecklare\WIN21\GITHUB\C#\UWPApp\bin\x86\Debug\Core\UWPApp.exe">
       <PackagePath>UWPApp.exe</PackagePath>
-      <Modified>2021-12-09T10:43:41.701</Modified>
+      <Modified>2021-12-09T15:37:19.633</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
