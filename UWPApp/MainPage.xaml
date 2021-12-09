@@ -8,7 +8,72 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid HorizontalAlignment="Stretch" Height="640">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Height="auto">
+            <Rectangle Name="Rec1" Fill="#1b80ab"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Grid.Row="1" Margin="0" Height="auto" Width="auto" />
+            
+            <Grid Padding="20">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    
+                    
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition />
+                                        <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="1" Margin="10">
+                <TextBlock Foreground="White" FontWeight="Bold" FontSize="35" Text="Sign Up Customer!" Grid.Column="0" Margin="-10 -20 0 20"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="0" Grid.Row="2" Margin="0 0 10 15">
+                <TextBlock Foreground="White" Text="First name:" Grid.Column="0" Margin="0 0 0 2"/>
+                <TextBox Grid.Column="0" x:Name="FirstName"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" Grid.Row="2" Margin="10 0 0 15">
+                <TextBlock Foreground="White" Text="Last name:" Grid.Column="1" Margin="0 0 0 2"/>
+                <TextBox Grid.Column="1" x:Name="LastName"/>
+                </StackPanel>
+
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="3" Margin="0 0 0 15">
+                <TextBlock Foreground="White" Text="E-mail:" Grid.Column="1" Margin="0 0 0 2"/>
+                <TextBox Grid.Column="1" x:Name="Email"/>
+                </StackPanel>
+
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="4" Margin="0 0 0 15">
+                <TextBlock Foreground="White" Text="Special wishes:" Grid.Column="0" Margin="0 0 0 2"/>
+                <TextBox Grid.Column="0" Height="80" x:Name="Wishes" />
+                </StackPanel>
+
+                <StackPanel Grid.ColumnSpan="2" Grid.Row="5" Margin="00 10 0 15">
+                    <Button Content="Sign Up!" x:Name="Submit" FontSize="20" FontWeight="Bold" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+
+            </Grid>
+            
+        
+        </Grid>
+
+
+        <Grid Grid.Column="1" Height="auto">
+            <Rectangle Name="Rec2" Fill="#dbd7d7"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Grid.Row="1" Margin="0" Height="auto" Width="auto" />
+            <StackPanel Padding="20">
+                <ListViewItem Foreground="Black">Item</ListViewItem>
+            </StackPanel>
+            
+        </Grid>
 
     </Grid>
 </Page>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7fcfd91a-5479-4001-9ff6-6efe1f57b985": {
+      "ProjectGuid": "7fcfd91a-5479-4001-9ff6-6efe1f57b985",
+      "DisplayName": "UWPApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

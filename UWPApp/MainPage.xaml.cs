@@ -25,6 +25,9 @@ namespace UWPApp
         public MainPage()
         {
             this.InitializeComponent();
+
         }
     }
+
+
 }
