@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChristmasTable
+namespace ChristmasShow
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ChristmasTable app = new ChristmasTable();
+            ChristmasShow app = new ChristmasShow();
 
-            Console.WriteLine("\r\n \r\n     Welcome to the 2021 Christmas table! \r\n \r\n");
+            Console.WriteLine("\r\n \r\n     Welcome to the 2021 Christmas Show! \r\n \r\n");
             Console.WriteLine("     Choose your option:");
             Console.WriteLine(@"
-        Add [First Name, Last Name, Email and Allergies]        Add a New Customer to the Christmas Table
-        Remove [# Number]                                       Remove a Customer
-        View                                                    View all Customers
-        Exit                                                    Close the Consol Application");
+        Add [First Name, Last Name, Email and Chair Number]         Add a New Customer to the Christmas Show
+        Remove [# Number]                                           Remove a Customer
+        View                                                        View all Customers
+        Exit                                                        Close the Consol Application");
 
             Console.Write("\r\n \r\n >");
 

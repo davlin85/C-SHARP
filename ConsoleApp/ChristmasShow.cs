@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChristmasTable
+namespace ChristmasShow
 {
-    public class ChristmasTable
+    public class ChristmasShow
     {
         string fileLocation = "christmas-table.txt";
-        List<ChristmasTable> items = new List<ChristmasTable>();
+        List<ChristmasShow> items = new List<ChristmasShow>();
 
-        public ChristmasTable()
+        public ChristmasShow()
         {
             LoadItems();
         }
@@ -25,7 +25,7 @@ namespace ChristmasTable
                 {
                     string text = line.Substring(1).Split(' ')[1];
                     int number = int.Parse(line.Substring(1).Split(' ')[0]);
-                    ChristmasTable newItem = new ChristmasTable();
+                    ChristmasShow newItem = new ChristmasShow();
                     items.Add(newItem);
                 }
             }
