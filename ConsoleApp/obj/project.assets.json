@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\david\\OneDrive\\Dokument\\Webbutvecklare\\WIN21\\GITHUB\\C#\\ConsoleApp\\ConsoleApp.csproj",
-      "projectName": "ConsoleApp",
-      "projectPath": "C:\\Users\\david\\OneDrive\\Dokument\\Webbutvecklare\\WIN21\\GITHUB\\C#\\ConsoleApp\\ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\david\\OneDrive\\Dokument\\Webbutvecklare\\WIN21\\GITHUB\\C#\\ConsoleApp\\ConsoleAppTest.csproj",
+      "projectName": "ConsoleAppTest",
+      "projectPath": "C:\\Users\\david\\OneDrive\\Dokument\\Webbutvecklare\\WIN21\\GITHUB\\C#\\ConsoleApp\\ConsoleAppTest.csproj",
       "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\david\\OneDrive\\Dokument\\Webbutvecklare\\WIN21\\GITHUB\\C#\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",

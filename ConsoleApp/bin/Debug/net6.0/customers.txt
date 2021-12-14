@@ -1,0 +1,3 @@
+Sanna Andersson, sanna.c.andersson@outlook.com, 32, Meat
+Gustav Tollen, gustav@tollen.se, 36
+Jonas Strand, jonas@strand.se, 54, Spicy food
