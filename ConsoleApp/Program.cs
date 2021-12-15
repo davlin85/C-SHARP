@@ -9,21 +9,21 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             ChristmasShow Show = new();
 
-            Console.WriteLine("\r\n \r\n     Welcome to the 2021 Christmas Show! \r\n \r\n");
-            Console.WriteLine("     Choose your option:");
+            Console.WriteLine("\r\n \r\n            Welcome to the 2021 Christmas Show! \r\n \r\n");
+            Console.WriteLine("             Choose your option:");
             Console.WriteLine(@"
-        Add                        Add a customer to the Christmas Show!
-        Remove                     Remove a customer
-        View                       View all customers
-        Discount                   Generate a discount code
-        Menu                       See your options
-        Exit                       Exit the command line application");
+                Add                        Add a customer to the Christmas Show!
+                Remove                     Remove a customer
+                View                       View all customers
+                Discount                   Generate a discount code
+                Menu                       See your options
+                Exit                       Exit the command line application");
 
             Console.Write("\r\n \r\n >");
 
@@ -46,10 +46,13 @@ namespace ConsoleApp
                 {
                     Show.Discount();
                 }
-
                 else if (inputLine.StartsWith("Menu") || inputLine.StartsWith("menu"))
                 {
                     Show.Menu();
+                }
+                else if (inputLine.StartsWith("Exit") || inputLine.StartsWith("exit"))
+                {
+                    Environment.Exit(0);
                 }
                 else
                 {

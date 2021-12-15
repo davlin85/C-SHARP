@@ -1,5 +1,4 @@
+David Lindström, david.s.lindstrom@gmail.com, 36
 Sanna Andersson, sanna.c.andersson@outlook.com, 32, Meat
 Gustav Tollen, gustav@tollen.se, 36
-Jonas Strand, jonas@strand.se, 54, Spicy food
-gustav test, test, 22
-Sanna Karlsson, sanna.karlsson@ss.se, 33
+Jonas Strand, jonas@strand.se, 43, Spicy food

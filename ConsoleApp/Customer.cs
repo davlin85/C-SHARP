@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    internal class Customer
+    public class Customer
     {
         public Customer()
         {

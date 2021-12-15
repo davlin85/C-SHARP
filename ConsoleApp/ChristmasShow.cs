@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,15 +10,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    internal class ChristmasShow
+    public class ChristmasShow
     {
         readonly string menu = @"
-        Add                        Add a Customer to the Christmas Show!
-        Remove                     Remove a Customer
-        View                       View all Customers
-        Discount                   Generate a discount code
-        Menu                       See your Options
-        Exit                       Exit the command line application";
+                Add                        Add a customer to the Christmas Show!
+                Remove                     Remove a customer
+                View                       View all customers
+                Discount                   Generate a discount code
+                Menu                       See your options
+                Exit                       Exit the command line application";
 
         public void Menu()
         {
@@ -26,7 +27,7 @@ namespace ConsoleApp
 
         public void AddCustomer()
         {
-            Customer customer = new Customer();
+            Customer customer = new Customer(); 
 
             Console.WriteLine("First name:");
             customer.FirstName = Console.ReadLine();
@@ -44,9 +45,20 @@ namespace ConsoleApp
             customer.Age = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("\r");
 
-            Console.WriteLine("Food allergy [Yes / No]:");
-            customer.FoodAllergy = Console.ReadLine();
-            Console.WriteLine("\r");
+            if(customer.Age < 18)
+            {
+                Console.WriteLine("You have to be 18 years old to attend the Christmas Show! ");
+                Environment.Exit(0);
+            }
+            else if(customer.Age > 18 || customer.Age == 18)
+            {
+                Console.WriteLine("Food allergy [Yes / No]:");
+                customer.FoodAllergy = Console.ReadLine();
+                Console.WriteLine("\r");
+
+                Random random = new Random();
+                File.AppendAllText(@"viewcustomers.txt", $"{customer.FirstName} {customer.LastName}, {customer.Email} {Environment.NewLine}");
+            }
 
             if (customer.FoodAllergy == "Yes" || (customer.FoodAllergy == "yes"))
             {
@@ -73,7 +85,6 @@ namespace ConsoleApp
             {
                 Console.WriteLine("You have to type Yes or No! Type Add to start over!");
             }
-                File.AppendAllText(@"viewcustomers.txt", $"{customer.FirstName} {customer.LastName}, {customer.Email}" + Environment.NewLine);
         }
 
         public void Remove()
@@ -107,29 +118,21 @@ namespace ConsoleApp
 
             if (File.Exists(file))
             {
-
                 string text = File.ReadAllText(file);
                 Console.WriteLine(text);
             }
             else
             {
                 Console.WriteLine("The Christmas Show has 0 Customers!");
-
             }
-
-
         }
 
         public void Discount()
         {
-
-            Random rnd = new Random();
-            for (int j = 0; j < 1; j++)
             {
-                Console.WriteLine(@"Your Discount Code is" + " " + rnd.Next() + ".");
+                Console.WriteLine(@"Your Discount Code is" + " " + Guid.NewGuid() + ".");
+                Console.WriteLine("This will get you a 20% discount at the bar!");
             }
-
         }
     }
-
 }
