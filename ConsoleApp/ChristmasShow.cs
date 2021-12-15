@@ -56,7 +56,6 @@ namespace ConsoleApp
                 customer.FoodAllergy = Console.ReadLine();
                 Console.WriteLine("\r");
 
-                Random random = new Random();
                 File.AppendAllText(@"viewcustomers.txt", $"{customer.FirstName} {customer.LastName}, {customer.Email} {Environment.NewLine}");
             }
 
