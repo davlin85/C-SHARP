@@ -15,7 +15,8 @@ namespace ConsoleApp
         {
             ChristmasShow Show = new();
 
-            Console.WriteLine("\r\n \r\n            Welcome to the 2021 Christmas Show! \r\n \r\n");
+            Console.WriteLine("\r\n \r\n            Welcome to the 2021 Christmas Show!");
+            Console.WriteLine("            - Food, drinks, music and entertainment! \r\n \r\n");
             Console.WriteLine("             Choose your option:");
             Console.WriteLine(@"
                 Add                        Add a customer to the Christmas Show!
