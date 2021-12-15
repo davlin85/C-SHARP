@@ -42,6 +42,11 @@ namespace ConsoleApp
                 {
                     Show.ViewCustomers();
                 }
+                else if (inputLine.StartsWith("Discount") || inputLine.StartsWith("discount"))
+                {
+                    Show.Discount();
+                }
+
                 else if (inputLine.StartsWith("Menu") || inputLine.StartsWith("menu"))
                 {
                     Show.Menu();

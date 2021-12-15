@@ -81,7 +81,7 @@ namespace ConsoleApp
             ViewCustomers();
             Console.WriteLine("\r");
 
-            Console.WriteLine("Type the First Name of the customer you want to remove:");
+            Console.WriteLine("Type the First and Last Name of the customer you want to remove:");
             string strFilePath = "viewcustomers.txt";
             string strSearchText = Console.ReadLine();
             string strOldText;
@@ -99,9 +99,6 @@ namespace ConsoleApp
             Console.WriteLine("\r");
 
             Console.WriteLine(strSearchText + " have been removed from the Christmas Show!");
-            Console.WriteLine("\r");
-
-            ViewCustomers();
         }
 
         public void ViewCustomers()
@@ -110,12 +107,29 @@ namespace ConsoleApp
 
             if (File.Exists(file))
             {
+
                 string text = File.ReadAllText(file);
                 Console.WriteLine(text);
-            } else
+            }
+            else
             {
                 Console.WriteLine("The Christmas Show has 0 Customers!");
+
             }
+
+
+        }
+
+        public void Discount()
+        {
+
+            Random rnd = new Random();
+            for (int j = 0; j < 1; j++)
+            {
+                Console.WriteLine(@"Your Discount Code is" + " " + rnd.Next() + ".");
+            }
+
         }
     }
+
 }

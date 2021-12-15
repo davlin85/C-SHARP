@@ -1,3 +1,4 @@
-Sanna Andersson, sanna.c.andersson@outlook.com
 Gustav Tollen, gustav@tollen.se
-Jonas Strand, jonas@strand.se
+Jonas Strand, jonas@strand.se, 54
+gustav test, test
+Sanna Karlsson, sanna.karlsson@ss.se
