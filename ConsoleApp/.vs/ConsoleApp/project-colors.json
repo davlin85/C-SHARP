@@ -30,7 +30,17 @@
       "ProjectGuid": "2f4400af-98f6-456b-a831-d593cdf28690",
       "DisplayName": "ConsoleApp.Tests",
       "ColorIndex": 4
+    },
+    "813af5cd-5f09-42ce-923c-b43fb65b8262": {
+      "ProjectGuid": "813af5cd-5f09-42ce-923c-b43fb65b8262",
+      "DisplayName": "ConsoleApp.Tests",
+      "ColorIndex": 5
+    },
+    "9f40d552-e13b-4c54-b949-7fe792afe84f": {
+      "ProjectGuid": "9f40d552-e13b-4c54-b949-7fe792afe84f",
+      "DisplayName": "ConsoleApp.Tests",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 7
 }
