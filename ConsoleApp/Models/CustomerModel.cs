@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 
 
+
 namespace ConsoleApp
 {
-    public class Customer
+    public class CustomerModel
     {
-        public Customer()
+        public CustomerModel()
         {
 
         }

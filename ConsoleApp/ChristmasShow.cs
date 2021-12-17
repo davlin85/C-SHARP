@@ -21,58 +21,58 @@ namespace ConsoleApp
         
         public void AddCustomer()
         {
-            Customer customer = new Customer(); 
+            CustomerModel _customer = new(); 
 
             Console.WriteLine("First name:");
-            customer.FirstName = Console.ReadLine();
+            _customer.FirstName = Console.ReadLine();
             Console.WriteLine("\r");
 
             Console.WriteLine("Last name:");
-            customer.LastName = Console.ReadLine();
+            _customer.LastName = Console.ReadLine();
             Console.WriteLine("\r");
 
             Console.WriteLine("Email:");
-            customer.Email = Console.ReadLine();
+            _customer.Email = Console.ReadLine();
             Console.WriteLine("\r");
 
             Console.WriteLine("Age:");
-            customer.Age = Convert.ToInt32(Console.ReadLine());
+            _customer.Age = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("\r");
 
-            if(customer.Age < 18)
+            if(_customer.Age < 18)
             {
                 Console.WriteLine("You have to be 18 years old to attend the Christmas Show! ");
                 Environment.Exit(0);
             }
-            else if(customer.Age > 18 || customer.Age == 18)
+            else if(_customer.Age > 18 || _customer.Age == 18)
             {
                 Console.WriteLine("Food allergy [Yes / No]:");
-                customer.FoodAllergy = Console.ReadLine();
+                _customer.FoodAllergy = Console.ReadLine();
                 Console.WriteLine("\r");
 
-                File.AppendAllText(@"viewcustomers.txt", $"{customer.FirstName} {customer.LastName}, {customer.Email} {Environment.NewLine}");
+                File.AppendAllText(@"viewcustomers.txt", $"{_customer.FirstName} {_customer.LastName}, {_customer.Email} {Environment.NewLine}");
             }
 
-            if (customer.FoodAllergy == "Yes" || (customer.FoodAllergy == "yes"))
+            if (_customer.FoodAllergy == "Yes" || (_customer.FoodAllergy == "yes"))
             {
                 Console.WriteLine("What are you allergic to?");
-                customer.InputFoodAllergy = Console.ReadLine();
+                _customer.InputFoodAllergy = Console.ReadLine();
                 Console.WriteLine("\r\n \r");
 
-                Console.WriteLine(@"We will make sure not to serve you any " + $"{customer.InputFoodAllergy}" + "!");
+                Console.WriteLine(@"We will make sure not to serve you any " + $"{_customer.InputFoodAllergy}" + "!");
                 Console.WriteLine("\r");
 
-                File.AppendAllText(@"customers.txt", $"{customer.FirstName} {customer.LastName}, {customer.Email}, {customer.Age}, {customer.InputFoodAllergy}{Environment.NewLine}");
-                Console.WriteLine(customer.FirstName + " " + customer.LastName + ", " + customer.Email + ", " + customer.Age + " years old and allergic to " + customer.InputFoodAllergy + "," + " have been added!");
+                File.AppendAllText(@"customers.txt", $"{_customer.FirstName} {_customer.LastName}, {_customer.Email}, {_customer.Age}, {_customer.InputFoodAllergy}{Environment.NewLine}");
+                Console.WriteLine(_customer.FirstName + " " + _customer.LastName + ", " + _customer.Email + ", " + _customer.Age + " years old and allergic to " + _customer.InputFoodAllergy + "," + " have been added!");
 
-            } else if (customer.FoodAllergy == "No" || (customer.FoodAllergy == "no"))
+            } else if (_customer.FoodAllergy == "No" || (_customer.FoodAllergy == "no"))
             {
                 Console.WriteLine("\r\n \r");
                 Console.WriteLine("Then you can enjoy our buffet!");
                 Console.WriteLine("\r");
 
-                File.AppendAllText(@"customers.txt", $"{customer.FirstName} {customer.LastName}, {customer.Email}, {customer.Age}{Environment.NewLine}");
-                Console.WriteLine(customer.FirstName + " " + customer.LastName + ", " + customer.Email + " and " + customer.Age + " years old " + "have been added!");
+                File.AppendAllText(@"customers.txt", $"{_customer.FirstName} {_customer.LastName}, {_customer.Email}, {_customer.Age}{Environment.NewLine}");
+                Console.WriteLine(_customer.FirstName + " " + _customer.LastName + ", " + _customer.Email + " and " + _customer.Age + " years old " + "have been added!");
             }
             else
             {
