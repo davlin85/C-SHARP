@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    public class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
