@@ -1,0 +1,4 @@
+David Lindström, david.s.lindstrom@gmail.com, 36, Nuts
+Sanna Andersson, sanna.c.andersson@outlook.com, 32
+Jonas Strand, jonas@strand.se, 56
+Jonas Karlsson, jonas@karlsson.se, 99, Nuts

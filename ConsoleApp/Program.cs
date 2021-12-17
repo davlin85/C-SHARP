@@ -15,7 +15,8 @@ namespace ConsoleApp
         {
             ChristmasShow Show = new();
 
-            Console.WriteLine("\r\n \r\n            Welcome to the 2021 Christmas Show!");
+            Console.WriteLine("\r\n \r\n");
+            Console.WriteLine("            Welcome to the 2021 Christmas Show!");
             Console.WriteLine("            - Food, drinks, music and entertainment! \r\n \r\n");
             Console.WriteLine("             Choose your option:");
             Console.WriteLine(@"
@@ -28,40 +29,40 @@ namespace ConsoleApp
 
             Console.Write("\r\n \r\n >");
 
-            string inputLine = Console.ReadLine();
-            while (!inputLine.Equals("") && !inputLine.ToLower().Equals("exit"))
-            {
-                if (inputLine.StartsWith("Add") || inputLine.StartsWith("add"))
+                    string UserInput = Console.ReadLine();
+
+                    while (!UserInput.Equals("") && !UserInput.ToLower().Equals("exit"))
+                {
+                    if (UserInput.StartsWith("Add") || UserInput.StartsWith("add"))
                 {
                     Show.AddCustomer();
                 }
-                else if (inputLine.StartsWith("Remove") || inputLine.StartsWith("remove"))
+                    else if (UserInput.StartsWith("Remove") || UserInput.StartsWith("remove"))
                 {
                     Show.Remove();
                 }
-                else if (inputLine.StartsWith("View") || inputLine.StartsWith("view"))
+                    else if (UserInput.StartsWith("View") || UserInput.StartsWith("view"))
                 {
                     Show.ViewCustomers();
                 }
-                else if (inputLine.StartsWith("Discount") || inputLine.StartsWith("discount"))
+                    else if (UserInput.StartsWith("Discount") || UserInput.StartsWith("discount"))
                 {
                     Show.Discount();
                 }
-                else if (inputLine.StartsWith("Menu") || inputLine.StartsWith("menu"))
+                    else if (UserInput.StartsWith("Menu") || UserInput.StartsWith("menu"))
                 {
                     Show.Menu();
                 }
-                else if (inputLine.StartsWith("Exit") || inputLine.StartsWith("exit"))
+                    else if (UserInput.StartsWith("Exit") || UserInput.StartsWith("exit"))
                 {
-                    Environment.Exit(0);
+                    Show.Exit();
                 }
-                else
+                    else
                 {
                     Console.WriteLine("Try another option!");
                 }
-
-                Console.Write("\r\n \r\n >");
-                inputLine = Console.ReadLine();
+                    Console.Write("\r\n \r\n >");
+                    UserInput = Console.ReadLine();
             }
         }
     }

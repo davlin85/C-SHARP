@@ -12,19 +12,13 @@ namespace ConsoleApp
 {
     public class ChristmasShow
     {
-        readonly string menu = @"
-                Add                        Add a customer to the Christmas Show!
-                Remove                     Remove a customer
-                View                       View all customers
-                Discount                   Generate a discount code
-                Menu                       See your options
-                Exit                       Exit the command line application";
-
-        public void Menu()
-        {
-            Console.WriteLine(menu);
-        }
-
+        /// <summary>
+        /// Metoden frågar efter förnamn, efternamn, mail, ålder och allergier.
+        /// Gör en enklare åldersvalidering då det krävs att man är minst 18 år.
+        /// Frågar om du är allergisk, om ja mot vad.
+        /// All information sparas i customers.txt. Förnamn, efternamn och mail sparas i viewcustomers.txt.
+        /// </summary>
+        
         public void AddCustomer()
         {
             Customer customer = new Customer(); 
@@ -86,12 +80,16 @@ namespace ConsoleApp
             }
         }
 
-        public void Remove()
+        /// <summary>
+        /// Tar bort Customer genom att matcha användarens input mot Customers i viewcustomers.txt.
+        /// </summary>
+        
+        public void Remove() 
         {
             ViewCustomers();
             Console.WriteLine("\r");
 
-            Console.WriteLine("Type the First and Last Name of the customer you want to remove:");
+            Console.WriteLine("Type the First Name and the Last Name of the customer you want to remove:");
             string strFilePath = "viewcustomers.txt";
             string strSearchText = Console.ReadLine();
             string strOldText;
@@ -111,6 +109,10 @@ namespace ConsoleApp
             Console.WriteLine(strSearchText + " have been removed from the Christmas Show!");
         }
 
+        /// <summary>
+        /// Visar upp all text i viewcustomers.txt, dvs alla Customers.
+        /// </summary>
+
         public void ViewCustomers()
         {
             string file = @"viewcustomers.txt";
@@ -126,12 +128,40 @@ namespace ConsoleApp
             }
         }
 
+        /// <summary>
+        /// Genererar en Guid som är unik och som fungerar som en discount code.
+        /// </summary>
+
         public void Discount()
         {
-            {
-                Console.WriteLine(@"Your Discount Code is" + " " + Guid.NewGuid() + ".");
-                Console.WriteLine("This will get you a 20% discount at the bar!");
-            }
+            Console.WriteLine(@"Your Discount Code is" + " " + Guid.NewGuid() + ".");
+            Console.WriteLine("This will get you a 20% discount at the bar!");
+        }
+
+        /// <summary>
+        /// Tar fram nedanstående meny.
+        /// </summary>
+
+        readonly string menu = @"
+                Add                        Add a customer to the Christmas Show!
+                Remove                     Remove a customer
+                View                       View all customers
+                Discount                   Generate a discount code
+                Menu                       See your options
+                Exit                       Exit the command line application";
+
+        public void Menu()
+        {
+            Console.WriteLine(menu);
+        }
+
+        /// <summary>
+        /// Avslutar applikationen.
+        /// </summary>
+
+        public void Exit()
+        {
+            Environment.Exit(0);
         }
     }
 }
