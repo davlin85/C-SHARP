@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    public class ChristmasShow
+    internal class ChristmasShow
     {
         /// <summary>
         /// Metoden frågar efter förnamn, efternamn, mail, ålder och allergier.
@@ -19,7 +19,7 @@ namespace ConsoleApp
         /// All information sparas i customers.txt. Förnamn, efternamn och mail sparas i viewcustomers.txt.
         /// </summary>
         
-        public void AddCustomer()
+        internal void AddCustomer()
         {
             CustomerModel _customer = new(); 
 
@@ -84,7 +84,7 @@ namespace ConsoleApp
         /// Tar bort Customer genom att matcha användarens input mot Customers i viewcustomers.txt.
         /// </summary>
         
-        public void Remove() 
+        internal void Remove() 
         {
             ViewCustomers();
             Console.WriteLine("\r");
@@ -113,7 +113,7 @@ namespace ConsoleApp
         /// Visar upp all text i viewcustomers.txt, dvs alla Customers.
         /// </summary>
 
-        public void ViewCustomers()
+        internal void ViewCustomers()
         {
             string file = @"viewcustomers.txt";
 
@@ -132,7 +132,7 @@ namespace ConsoleApp
         /// Genererar en Guid som är unik och som fungerar som en discount code.
         /// </summary>
 
-        public void Discount()
+        internal void Discount()
         {
             Console.WriteLine(@"Your Discount Code is" + " " + Guid.NewGuid() + ".");
             Console.WriteLine("This will get you a 20% discount at the bar!");
@@ -150,7 +150,7 @@ namespace ConsoleApp
                 Menu                       See your options
                 Exit                       Exit the command line application";
 
-        public void Menu()
+        internal void Menu()
         {
             Console.WriteLine(menu);
         }
@@ -159,7 +159,7 @@ namespace ConsoleApp
         /// Avslutar applikationen.
         /// </summary>
 
-        public void Exit()
+        internal void Exit()
         {
             Environment.Exit(0);
         }
