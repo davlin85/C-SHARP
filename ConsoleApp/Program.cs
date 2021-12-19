@@ -15,8 +15,21 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("\r\n \r\n");
-            Console.WriteLine("            Welcome to the 2021 Christmas Show!");
-            Console.WriteLine("            - Food, drinks, music and entertainment! \r\n \r\n");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("            ############################################################");
+            Console.WriteLine("            ############################################################");
+            Console.WriteLine("            ####                                                    ####");
+            Console.WriteLine("            ####      Welcome to the 2021 Christmas Show!           ####");
+            Console.Write("            ####"); Console.ForegroundColor = ConsoleColor.Green; Console.Write("       -Food, drinks, music and entertainment!");
+            Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("      ####");
+            Console.WriteLine("            ####                                                    ####");
+            Console.WriteLine("            ############################################################");
+            Console.WriteLine("            ############################################################");
+
+            Console.WriteLine("\r\n");
+
+            Console.ForegroundColor = ConsoleColor.White;
+
             Console.WriteLine("            Choose your option:");
             Console.WriteLine(@"
                 Add                        Add a customer to the Christmas Show!

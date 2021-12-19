@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    internal class CustomerModel
+    public class CustomerModel
     {
-        internal CustomerModel()
+        public CustomerModel()
         {
 
         }
